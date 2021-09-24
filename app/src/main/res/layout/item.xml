@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imgAnh"
+        android:layout_width="158dp"
+        android:layout_height="122dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.126"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/remove_bg" />
+
+    <TextView
+        android:id="@+id/txtPrice"
+        android:layout_width="136dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="25"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.322"
+        app:layout_constraintStart_toEndOf="@+id/imgAnh"
+        app:layout_constraintTop_toBottomOf="@+id/txtName" />
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="131dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="8dp"
+        android:text="Lavender"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.322"
+        app:layout_constraintStart_toEndOf="@+id/imgAnh"
+        app:layout_constraintTop_toTopOf="@+id/imgAnh" />
+</androidx.constraintlayout.widget.ConstraintLayout>
