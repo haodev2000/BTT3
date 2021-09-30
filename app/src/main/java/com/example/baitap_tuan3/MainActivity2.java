@@ -47,12 +47,12 @@ public class MainActivity2 extends AppCompatActivity implements OnClickListener{
     public void itemClick(Flower chair, ImageView img) {
         Fade fade = new Fade();
         View decor = getWindow().getDecorView();
-        // we are adding fade animation for enter transition.
+//        // we are adding fade animation for enter transition.
         getWindow().setEnterTransition(fade);
-
-        // we are also setting fade animation for exit transition.
+//
+//        // we are also setting fade animation for exit transition.
         getWindow().setExitTransition(fade);
-        // initializing our imageview.
+//        // initializing our imageview.
         Intent intent = new Intent(MainActivity2.this,MainActivity3.class);
 
         intent.putExtra("key1",chair);
